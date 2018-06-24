@@ -1,7 +1,678 @@
 @import "_vars.sass"
 @import "_fonts.sass"
-
-
-
+body
+	font-family: $i-reg
+	margin: 0
+	font-size: 18px
+	max-width: 100%
+.wrapper
+	max-width: 1920px
+	margin: 0 auto
+	color: $grey
+	background-color: $white
+	position: relative
+	background-image: url(../img/bgi-main.png)
+	background-position: center center
+header
+	position: absolute
+	top: 0
+	left: 0
+	right: 0
+	z-index: 100
+.header_container
+	max-width: 1200px
+	margin: 0 auto
+	padding-top: 50px
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	align-items: center
+	justify-content: space-between
+	color: $white
+.header_logo
+	a
+		display: block
+.header_nav
+	margin-right: auto
+	margin-left: 50px
+.header_nav_menu_list
+	list-style-type: none
+	margin: 0
+	padding: 0
+	li
+		display: inline-block
+		margin: 0 23px
+		a
+			color: $white
+			text-decoration: none
+			font-family: $i-light
+			transition: 0.3s ease all
+			font-size: 18px
+			&:after
+				content: ''
+				display: block
+				width: 0
+				height: 2px
+				transition: 0.3s ease width
+				background-color: $white
+				margin: 3px auto 0
+		&.active
+			a
+				font-family: $i-bold
+.header_phones_list
+	list-style-type: none
+	margin: 0
+	padding: 0
+	li
+		display: block
+		margin: 4px 0
+		text-align: right
+		a
+			color: $white
+			text-decoration: none
+			font-family: $i-reg
+			transition: 0.3s ease all
+			font-size: 18px
+		&.active
+			a
+				color: $orange
+.start
+	width: 100%
+	height: 100vh
+	max-width: 1920px
+	max-height: 1500px
+	margin: 0 auto 100px
+	position: relative
+	z-index: 2
+	background-image: url(../img/shutterstock_695487799.jpg)
+	background-repeat: no-repeat
+	background-size: cover
+	overflow: hidden
+	border-radius: 0 0 80px 80px
+.start_grad
+	position: absolute
+	top: 0
+	bottom: 0
+	right: 0
+	left: 0
+	z-index: 1
+	background: rgba(0,0,0,0.74);
+	background: -moz-linear-gradient(-45deg, rgba(0,0,0,0.74) 0%, rgba(13,13,13,0.74) 0%, rgba(0,0,0,0.73) 4%, rgba(0,0,0,0.73) 6%, rgba(0,0,0,0.67) 45%, rgba(0,0,0,0.67) 46%, rgba(13,13,13,0.66) 53%, rgba(13,13,13,0.66) 54%, rgba(13,13,13,0.64) 69%, rgba(13,13,13,0.59) 100%);
+	background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(0,0,0,0.74)), color-stop(0%, rgba(13,13,13,0.74)), color-stop(4%, rgba(0,0,0,0.73)), color-stop(6%, rgba(0,0,0,0.73)), color-stop(45%, rgba(0,0,0,0.67)), color-stop(46%, rgba(0,0,0,0.67)), color-stop(53%, rgba(13,13,13,0.66)), color-stop(54%, rgba(13,13,13,0.66)), color-stop(69%, rgba(13,13,13,0.64)), color-stop(100%, rgba(13,13,13,0.59)));
+	background: -webkit-linear-gradient(-45deg, rgba(0,0,0,0.74) 0%, rgba(13,13,13,0.74) 0%, rgba(0,0,0,0.73) 4%, rgba(0,0,0,0.73) 6%, rgba(0,0,0,0.67) 45%, rgba(0,0,0,0.67) 46%, rgba(13,13,13,0.66) 53%, rgba(13,13,13,0.66) 54%, rgba(13,13,13,0.64) 69%, rgba(13,13,13,0.59) 100%);
+	background: -o-linear-gradient(-45deg, rgba(0,0,0,0.74) 0%, rgba(13,13,13,0.74) 0%, rgba(0,0,0,0.73) 4%, rgba(0,0,0,0.73) 6%, rgba(0,0,0,0.67) 45%, rgba(0,0,0,0.67) 46%, rgba(13,13,13,0.66) 53%, rgba(13,13,13,0.66) 54%, rgba(13,13,13,0.64) 69%, rgba(13,13,13,0.59) 100%);
+	background: -ms-linear-gradient(-45deg, rgba(0,0,0,0.74) 0%, rgba(13,13,13,0.74) 0%, rgba(0,0,0,0.73) 4%, rgba(0,0,0,0.73) 6%, rgba(0,0,0,0.67) 45%, rgba(0,0,0,0.67) 46%, rgba(13,13,13,0.66) 53%, rgba(13,13,13,0.66) 54%, rgba(13,13,13,0.64) 69%, rgba(13,13,13,0.59) 100%);
+	background: linear-gradient(135deg, rgba(0,0,0,0.74) 0%, rgba(13,13,13,0.74) 0%, rgba(0,0,0,0.73) 4%, rgba(0,0,0,0.73) 6%, rgba(0,0,0,0.67) 45%, rgba(0,0,0,0.67) 46%, rgba(13,13,13,0.66) 53%, rgba(13,13,13,0.66) 54%, rgba(13,13,13,0.64) 69%, rgba(13,13,13,0.59) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#0d0d0d', GradientType=1 )
+.start_container
+	max-width: 1200px
+	margin: 0 auto
+.start_title
+	margin-top: 25vh
+	text-align: center
+	position: relative
+	z-index: 3
+	.__title
+		margin: 0
+		font-family: $i-bold
+		font-size: 58px
+		color: $white
+		letter-spacing: 3.5px
+	.__describe
+		color: $white
+		text-transform: uppercase
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		align-items: center
+		justify-content: space-around
+		font-family: $i-thin
+		font-size: 85px
+		margin-top: 15px
+		span
+			position: relative
+			&:after
+				content: ''
+				display: inline-block
+				height: 4px
+				width: 4px
+				background-color: $white
+				position: absolute
+				top: 50%
+				right: -45px
+				transform: translateY(-50%)
+			&:last-child
+				&:after
+					content: none
+	.__btn
+		font-size: 22px
+		line-height: 22px
+		cursor: pointer
+		padding: 25px 50px
+		outline: 0
+		border: none
+		background-color: $orange
+		border-radius: 10px
+		color: $white
+		transition: 0.3s ease all
+.start_scroll
+	position: absolute
+	bottom: 0
+	left: 50%
+	transform: translateX(-50%)
+	z-index: 4
+	background-color: $white
+	border-radius: 40px 40px 0 0
+	a
+		display: block
+		padding: 15px 15px 0
+.advantages
+	padding-top: 150px
+.advantages_container
+	max-width: 1200px
+	margin: 0 auto
+.advantages_title
+	margin-bottom: 80px
+	.__title
+		text-transform: uppercase
+		font-size: 41px
+		font-family: $i-bold
+		text-align: center
+		margin: 0
+		letter-spacing: 8.5px
+.advantages_content
+	max-width: 860px
+	margin: 0 auto
+.advantages_content_position
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	align-items: center
+	justify-content: space-between
+.advantages_content_position_describe
+	padding-left: 40px
+	position: relative
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	flex-wrap: wrap
+	.__title
+		text-transform: uppercase
+		font-size: 36px
+		font-family: $i-black
+		max-width: 310px
+		margin: 0
+		letter-spacing: 5px
+		width: 100%
+	.__text
+		font-size: 22px
+		font-family: $i-base
+		text-transform: uppercase
+		margin-top: 10px
+		letter-spacing: 3px
+		color: $l-grey
+.advantages_content_position
+	&.left
+		.advantages_content_position_describe
+			&:before
+				content: ''
+				display: inline-block
+				position: absolute
+				top: 0
+				left: 0
+				width: 7px
+				border-radius: 8px
+				height: 100%
+				background-color: $orange
+	&.right
+		.advantages_content_position_describe
+			justify-content: flex-end
+			padding-left: 0
+			padding-right: 40px
+			text-align: right
+			&:before
+				content: ''
+				display: inline-block
+				position: absolute
+				right: 0
+				top: 0
+				width: 7px
+				border-radius: 8px
+				height: 100%
+				background-color: $orange
+.plans_container
+	max-width: 1200px
+	margin: 0 auto
+.plans
+	margin-top: 100px
+.plans_title
+	margin-bottom: 80px
+	.__title
+		font-size: 41px
+		text-transform: uppercase
+		text-align: center
+		font-family: $i-bold
+		letter-spacing: 8px
+.plans_positions
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	flex-wrap: wrap
+	text-align: center
+	align-items: flex-start
+.plans_positions_position
+	flex: 0 0 50%
+	margin-bottom: 80px
+	padding-left: 50px
+	padding-right: 50px
+	.__img
+		overflow: visible
+		height: 140px
+		width: 140px
+		margin: 0 auto 15px
+		svg
+			height: 180px
+			width: 180px
+			display: block
+			overflow: visible
+			max-width: 100%
+			height: auto
+			margin: 0 auto
+			padding: 35px
+			border: 2px solid $orange
+			border-radius: 150px
+	.__title
+		text-transform: uppercase
+		font-size: 25px
+		font-family: $i-black
+		letter-spacing: 4px
+		color: #000
+		margin-top: 0
+		margin-bottom: 20px
+	.__content
+		padding-right: 40px
+		padding-left: 40px
+		font-size: 22px
+		line-height: 36px
+		color: $l-grey
+		font-family: $i-base
+		letter-spacing: 4px
+.rates
+	margin-top: 80px
+	margin-bottom: 150px
+.rates_container
+	max-width: 1200px
+	margin: 0 auto
+.rates_title
+	margin-bottom: 80px
+	.__title
+		font-size: 41px
+		color: #000
+		font-family: $i-bold
+		letter-spacing: 8px
+		text-transform: uppercase
+		text-align: center
+.rates_positions
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	align-items: flex-start
+	max-width: 1000px
+	margin: 0 auto
+	padding-bottom: 50px
+.rates_positions_position
+	padding: 40px
+	border-radius: 10px
+	background-color: $l-grey
+	color: $white
+	margin-right: 5px
+	margin-left: 5px
+	position: relative
+	max-width: 320px
+	transition: 0.5s ease all
+	&:first-child
+		background-color: #bcbcbc
+	&:nth-child(2)
+		background-color: #828080
+	&:last-child
+		background-color: #6e6e6e
+	&:after
+		content: ''
+		position: absolute
+		bottom: 0
+		left: 2px
+		right: 0
+		display: block
+		width: 0
+		height: 0
+		border-style: solid
+		transition: 0.5s ease all
+		border-width: 25px 158px 0 158px;
+		border-color: transparent transparent transparent transparent
+	.__title
+		font-size: 21px
+		font-family: $i-bold
+		position: relative
+		text-transform: uppercase
+		margin-bottom: 45px
+		letter-spacing: 4px
+		&:after
+			content: ''
+			width: 50px
+			height: 2px
+			background-color: $white
+			position: absolute
+			bottom: -10px
+			left: 0
+	.__list
+		list-style-type: none
+		margin: 0
+		padding: 0
+		min-height: 315px
+		li
+			font-size: 16px
+			letter-spacing: 2px
+			padding-top: 10px
+			padding-bottom: 10px
+	.__price
+		font-size: 32px
+		font-family: $i-black
+		letter-spacing: 4px
+		sup
+			font-size: 20px
+	.__btn
+		background-color: transparent
+		border-radius: 8px
+		border: 1px solid $white
+		display: inline-block
+		color: $white
+		text-decoration: none
+		padding: 10px 35px
+		text-align: center
+		font-size: 15px
+		letter-spacing: 3px
+		transition: 0.3s ease all
+.rates_p-s
+	text-align: center
+	.__describe
+		color: $l-grey
+		font-family: $i-light
+		font-size: 20px
+		letter-spacing: 1px
+.scopes
+	padding-top: 140px
+	padding-bottom: 140px
+	background-image: url(../img/bgi.png)
+	background-repeat: no-repeat
+	background-position: center bottom
+	background-size: contain
+	margin-bottom: 80px
+.scopes_container
+	max-width: 1200px
+	margin: 0 auto
+.scopes_title
+	margin-bottom: 100px
+	.__title
+		text-transform: uppercase
+		color: #242424
+		font-family: $i-bold
+		letter-spacing: 8px
+		font-size: 41px
+		text-align: center
+.scopes_positions
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	align-items: flex-start
+	flex-wrap: wrap
+	justify-content: space-between
+.scopes_positions_position
+	flex: 0 0 30%
+	padding: 25px
+	background-color: transparent
+	border: 1px solid $orange
+	border-radius: 8px
+	min-height: 370px
+	margin: 15px 0
+	.__number
+		font-size: 60px
+		color: $orange
+		font-family: $i-black
+	.__title
+		margin-top: 50px
+		font-size: 21px
+		font-family: $i-black
+		color: #000
+		letter-spacing: 2px
+	.__content
+		font-size: 18px
+		color: #000
+		font-family: $i-book
+		letter-spacing: 1.5px
+.reviews
+	margin-top: 50px
+	margin-bottom: 50px
+	padding-top: 120px
+	padding-bottom: 220px
+	background-image: url(../img/bgi-2.png)
+	background-repeat: no-repeat
+	background-position: center center
+	background-size: contain
+.reviews_container
+	max-width: 1200px
+	margin: 0 auto
+.reviews_title
+	margin-top: 20px
+	.__title
+		text-transform: uppercase
+		font-size: 41px
+		color: #000
+		letter-spacing: 8px
+		text-align: center
+.reviews_content
+	.owl-nav
+		margin-top: 50px
+		.owl-next, .owl-prev
+			font-size: 40px
+			color: $l-grey
+			outline: 0
+			border: none
+			background-color: transparent
+			transition: 0.3s ease all
+.reviews_content_position
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+.reviews_content_position_img
+	margin-right: 20px
+	position: relative
+	min-width: 200px
+	z-index: 2
+	img
+		max-width: 100%
+		display: block
+		height: auto
+		position: relative
+		z-index: 2
+	&:after
+		content: ''
+		position: absolute
+		bottom: 40px
+		left: 10px
+		width: 120px
+		height: 120px
+		border-radius: 300px
+		background-color: $orange
+		z-index: 1
+.reviews_content_position_describe
+	.__name
+		text-transform: uppercase
+		font-size: 27px
+		margin-top: 0
+		margin-bottom: 10px
+		letter-spacing: 3px
+	.__place
+		color: $l-grey
+		font-size: 18px
+		font-family: $i-base
+		padding: 0
+		margin: 0
+		letter-spacing: 3px
+	.__text
+		font-size: 16px
+		font-family: $i-light
+		line-height: 1.54
+		padding-right: 30px
+.integrations
+	margin-bottom: 100px
+.integrations_container
+	max-width: 1200px
+	margin: 0 auto
+.integrations_title
+	.__title
+		font-size: 41px
+		letter-spacing: 8px
+		text-transform: uppercase
+		font-family: $i-bold
+		text-align: center
+.integrations_content
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	align-items: flex-end
+	flex-wrap: wrap
+	justify-content: space-around
+	margin-top: 80px
+.integrations_content_position
+	flex: 0 0 25%
+	text-align: center
+	margin-bottom: 50px
+.try-free_container
+	max-width: 1200px
+	margin: 0 auto
+	background-image: url(../img/tre-bgi.png)
+	background-repeat: no-repeat
+	background-position: left center
+	padding-top: 80px
+	padding-bottom: 150px
+.try-free_title
+	margin-bottom: 80px
+	.__title
+		letter-spacing: 8px
+		font-size: 41px
+		text-transform: uppercase
+		color: #000
+		font-family: $i-bold
+		text-align: center
+.try-free_content
+	text-align: center
+	.__title
+		font-size: 32px
+		margin-bottom: 30px
+		text-align: center
+		letter-spacing: 3px
+		font-family: $i-reg
+		span
+			color: $orange
+			text-transform: uppercase
+			letter-spacing: 2px
+			font-family: $i-reg
+			sup
+				font-size: 22px
+		b
+			font-family: $i-bold
+	.__content
+		color: $l-grey
+		font-size: 21px
+		line-height: 26px
+		max-width: 600px
+		margin: 0 auto 70px
+		text-align: center
+	.__btn
+		display: inline-block
+		text-align: center
+		padding: 25px 50px
+		color: $white
+		font-size: 20px
+		background-color: $orange
+		margin: 0 auto
+		border-radius: 8px
+		transition: 0.3s ease all
+		text-decoration: none
+		letter-spacing: 2px
+footer
+	padding-top: 100px
+	background-image: url(../img/footer-bgi.png)
+	background-repeat: no-repeat
+	background-position: bottom
+	background-size: 100%
+.footer_container
+	max-width: 1200px
+	margin: 0 auto
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	align-items: center
+	justify-content: space-between
+	padding-bottom: 40px
+.footer_soc
+	margin-right: 100px
+	margin-left: auto
+.footer_soc_list
+	margin: 0
+	padding: 0
+	list-style-type: none
+	li
+		display: inline-block
+		margin: 0 20px
+		a
+			text-decoration: none
+			padding: 20px
+			background-color: $l-grey
+			border-radius: 50px
+			display: block
+			font-size: 40px
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+			align-items: center
+			color: #ebebeb
+			transition: 0.3s ease all
+.footer_phones_list
+	padding: 0
+	margin: 0
+	list-style-type: none
+	li
+		display: block
+		text-align: right
+		margin-bottom: 10px
+		a
+			color: $l-grey
+			transition: 0.3s ease all
+			font-size: 24px
+			letter-spacing: 2px
+			text-decoration: none
 @import "_hover.sass"
 @import "_media.sass"
