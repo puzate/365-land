@@ -1,0 +1,311 @@
+@media screen and (max-width: 1199px)
+	.header_container
+		padding-top: 20px
+		padding-right: 15px
+		padding-left: 15px
+	.start_title .__describe
+		font-size: 60px
+		margin-bottom: 20px
+	.start_title .__describe span:after
+		right: -60px
+	.start_title .__btn
+		font-size: 20px
+		padding: 15px 35px
+	.start
+		margin-bottom: 50px
+	.advantages
+		padding-top: 75px
+	.plans
+		margin-top: 80px
+	.rates
+		margin-top: 0
+		margin-bottom: 80px
+	.rates_positions_position
+		max-width: 310px
+	.rates_positions
+		max-width: 900px
+	.rates_positions_position:after
+		border-width: 25px 145px 0 145px
+	.scopes
+		background-size: cover
+	.scopes_positions_position .__content
+		font-size: 16px
+	.scopes_positions
+		padding-right: 15px
+		padding-left: 15px
+	.scopes_positions_position
+		min-height: 390px
+	.scopes_positions_position .__title
+		font-size: 19px
+	.reviews
+		background-size: cover
+		padding-top: 70px
+		padding-bottom: 100px
+	.reviews_content .owl-nav
+		text-align: center
+	.integrations
+		margin-bottom: 50px
+	.try-free_container
+		padding-bottom: 80px
+	footer
+		background-size: cover
+	.footer_container
+		padding-left: 15px
+		padding-right: 15px
+@media screen and (max-width: 991px)
+	.header_nav
+		margin-left: 0
+	.header_nav_menu_list li
+		margin: 0 16px
+	.start_title .__title
+		margin-bottom: 5vh
+	.start_title .__describe
+		margin-bottom: 10vh
+	.advantages_content_position
+		padding-left: 20px
+		padding-right: 20px
+	.advantages_content_position_describe .__title
+		font-size: 32px
+	.plans_positions_position .__content
+		padding-right: 20px
+		padding-left: 20px
+		font-size: 20px
+	.rates_positions
+		flex-wrap: wrap
+		justify-content: space-around
+	.rates_positions_position
+		flex: 0 0 60%
+		max-width: 400px
+		text-align: center
+		margin-bottom: 40px
+	.rates_positions_position .__title
+		display: inline-block
+		margin: 0 auto 50px
+		text-align: center
+	.rates_positions_position .__list
+		min-height: 100px
+	.scopes_title
+		margin-bottom: 80px
+	.scopes_positions
+		justify-content: space-around
+	.scopes_positions_position
+		flex: 0 0 45%
+	.integrations_content_position
+		flex: 0 0 33%
+	.try-free_container
+		padding-top: 0
+		padding-right: 20px
+		padding-left: 20px
+	.footer_soc
+		margin-right: auto
+	.footer_soc_list li
+		margin: 0 15px
+@media screen and (max-width: 768px)
+	.wrapper
+		background-image: none
+	.header_container
+		padding-right: 0
+		padding-left: 0
+		padding-top: 5px
+		flex-wrap: wrap
+		position: relative
+	.header_logo
+		max-width: 45%
+		img
+			display: block
+			height: auto
+			max-width: 100%
+	.header_nav
+		position: absolute
+		left: -100vw
+		transition: 0.4s ease all
+		bottom: -130px
+		z-index: 100
+		&.open
+			left: 30px
+	.rates_positions_position:after
+		content: none
+	.scopes_positions_position .__title
+		font-size: 18px
+	.header_nav_menu_list
+		text-align: center
+		background-color: rgba(255,255,255, 0.95)
+		border: 2px solid $orange
+		border-radius: 10px
+		li
+			display: block
+			margin: 10px 20px
+			a
+				color: #000
+	.header_phones_list
+		padding-right: 20px
+	.header_phones_list li
+		margin: 8px 0
+	.header_phones_list li a
+		font-size: 14px
+	.header_button-xs
+		display: block
+		flex: 0 0 100%
+		margin-top: -20px
+		.__btn
+			outline: 0
+			border: none
+			background-color: transparent
+			padding: q0px 8px
+			border-radius: 8px
+			border: 2px solid $white
+			cursor: pointer
+			position: relative
+			z-index: 10
+			overflow: hidden
+			height: 60px
+			span
+				margin-top: 5px
+				margin-bottom: 5px
+				display: block
+				width: 40px
+				height: 4px
+				background-color: $white
+				transition: 1s ease all
+				top: 0
+				left: 0
+				position: relative
+			&.open
+				border-color: $orange
+				span
+					color: $orange
+					background-color: $orange
+					&:first-child
+						position: relative
+						transition: 0.4s ease left
+						left: -200px
+					&:nth-child(2)
+						transform: rotate(45deg)
+					&:last-child
+						transform: rotate(315deg)
+						position: relative
+						top: -9px
+	.start
+		border-radius: 0 0 50px 50px
+	.start_title .__title
+		font-size: 30px
+		margin-top: 140px
+		letter-spacing: 1px
+	.start_title .__describe
+		display: block
+		font-size: 40px
+		margin-bottom: 20px
+		span
+			display: block
+	.start_title .__describe span:after
+		content: none
+	.advantages_title
+		margin-bottom: 30px
+	.advantages_title .__title
+		letter-spacing: 2.5px
+		font-size: 30px
+	.advantages_content_position
+		display: block
+		&.right
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+			flex-wrap: wrap
+			flex-direction: column-reverse
+			text-align: center
+			.advantages_content_position_img
+				flex: 2 0 100%
+	.advantages_content_position.right .advantages_content_position_describe
+		flex: 1 0 100%
+	.advantages_content_position.left .advantages_content_position_describe:before
+		content: none
+	.advantages_content_position_describe
+		padding-left: 0
+		text-align: center
+		margin-top: 20px
+	.advantages_content_position_img
+		position: relative
+		img
+			display: block
+			height: auto
+			max-width: 100%
+		&:after
+			content: ''
+			width: 100%
+			height: 2px
+			background-color: $orange
+			position: absolute
+			bottom: 0
+			left: 0
+			right: 0
+	.advantages_content_position.right .advantages_content_position_describe:before
+		content: none
+	.advantages_content_position.right .advantages_content_position_describe
+		padding-right: 0
+		justify-content: center
+		text-align: center
+	.plans_title .__title
+		letter-spacing: 2.5px
+		font-size: 30px
+	.plans_title
+		margin-bottom: 30px
+	.plans_positions_position
+		padding-left: 20px
+		padding-right: 20px
+		flex: 0 0 100%
+		margin-bottom: 40px
+	.rates_title .__title
+		letter-spacing: 2.5px
+		font-size: 30px
+	.rates_positions_position
+		flex: 0 0 80%
+		padding: 25px
+	.scopes
+		padding-top: 50px
+	.scopes_title .__title
+		letter-spacing: 2.5px
+		font-size: 30px
+	.scopes_positions_position
+		min-height: 0
+		flex: 0 0 80%
+		padding: 25px 15px 25px
+		min-width: 90%
+	.reviews_content_position
+		display: block
+		text-align: center
+	.reviews_content_position_img
+		margin-right: 0
+	.reviews_content_position_describe .__text
+		padding-right: 15px
+		padding-left: 15px
+	.integrations_title .__title
+		font-size: 30px
+		letter-spacing: 2.5px
+	.try-free_title .__title
+		letter-spacing: 2.5px
+		font-size: 30px
+	.try-free_container
+		background-position: top
+	.try-free_content .__btn
+		font-size: 16px
+		padding-right: 20px
+		padding-left: 20px
+	.footer_container
+		display: block
+		text-align: center
+	.footer_logo
+		display: block
+		padding-bottom: 20px
+	.footer_soc
+		display: block
+		padding-top: 20px
+		padding-bottom: 20px
+	.footer_phones
+		display: block
+		padding-bottom: 20px
+		padding-top: 20px
+	.footer_phones_list li
+		text-align: center
+		margin: 10px 0
