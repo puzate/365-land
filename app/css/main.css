@@ -201,11 +201,26 @@ header {
   margin: 0 auto 100px;
   position: relative;
   z-index: 2;
-  background-image: url(../img/shutterstock_695487799.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
+  background-position: center center;
   overflow: hidden;
   border-radius: 0 0 80px 80px; }
+
+.start__bgi {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%; }
+  .start__bgi img {
+    max-width: 100%;
+    position: relative;
+    top: -200px;
+    display: block;
+    height: auto; }
 
 .start_grad {
   position: absolute;
@@ -235,7 +250,7 @@ header {
   .start_title .__title {
     margin: 0;
     font-family: "INTRO-BOLD";
-    font-size: 58px;
+    font-size: 44px;
     color: #fff;
     letter-spacing: 3.5px; }
   .start_title .__describe {
@@ -332,7 +347,7 @@ header {
     text-transform: uppercase;
     font-size: 36px;
     font-family: "INTRO-BLACK";
-    max-width: 310px;
+    max-width: 330px;
     margin: 0;
     letter-spacing: 5px;
     width: 100%; }
@@ -460,7 +475,6 @@ header {
   display: -o-flex;
   display: flex;
   align-items: flex-start;
-  max-width: 1000px;
   margin: 0 auto;
   padding-bottom: 50px; }
 
@@ -472,12 +486,18 @@ header {
   margin-right: 5px;
   margin-left: 5px;
   position: relative;
-  max-width: 320px;
+  flex: 0 0 33%;
   transition: 0.5s ease all; }
   .rates_positions_position:first-child {
     background-color: #bcbcbc; }
   .rates_positions_position:nth-child(2) {
-    background-color: #828080; }
+    background-color: #fa731e;
+    transform: scale(1.1);
+    z-index: 5; }
+    .rates_positions_position:nth-child(2):after {
+      border-color: #fa731e transparent transparent transparent;
+      bottom: -23px;
+      border-width: 25px 195px 0 195px; }
   .rates_positions_position:last-child {
     background-color: #6e6e6e; }
   .rates_positions_position:after {
@@ -839,13 +859,6 @@ footer {
     color: #fa731e; }
   .start_title .__btn:hover {
     background-color: #fb8439; }
-  .rates_positions_position:hover {
-    background-color: #fa731e;
-    transform: scale(1.1);
-    z-index: 5; }
-    .rates_positions_position:hover:after {
-      border-color: #fa731e transparent transparent transparent;
-      bottom: -23px; }
   .rates_positions_position .__btn:hover {
     color: #fa731e;
     border-color: #fa731e;
@@ -969,9 +982,10 @@ footer {
   .header_container {
     padding-right: 0;
     padding-left: 0;
-    padding-top: 5px;
+    padding-top: 25px;
     flex-wrap: wrap;
-    position: relative; }
+    position: relative;
+    align-items: flex-start; }
   .header_logo {
     max-width: 45%; }
     .header_logo img {
@@ -1003,13 +1017,13 @@ footer {
   .header_phones_list {
     padding-right: 20px; }
   .header_phones_list li {
-    margin: 8px 0; }
+    margin: 16px 0; }
   .header_phones_list li a {
-    font-size: 14px; }
+    font-size: 16px; }
   .header_button-xs {
     display: block;
     flex: 0 0 100%;
-    margin-top: -20px; }
+    margin-top: -60px; }
     .header_button-xs .__btn {
       outline: 0;
       border: none;
@@ -1135,9 +1149,9 @@ footer {
     flex: 0 0 80%;
     padding: 25px 15px 25px;
     min-width: 90%; }
-  .reviews_content_position {
-    display: block;
-    text-align: center; }
+  .reviews_content_position_img:after {
+    bottom: auto;
+    top: 70px; }
   .reviews_content_position_img {
     margin-right: 0; }
   .reviews_content_position_describe .__text {
@@ -1150,7 +1164,7 @@ footer {
     letter-spacing: 2.5px;
     font-size: 30px; }
   .try-free_container {
-    background-position: top; }
+    background-position: -91px 49px; }
   .try-free_content .__btn {
     font-size: 16px;
     padding-right: 20px;
@@ -1171,4 +1185,32 @@ footer {
     padding-top: 20px; }
   .footer_phones_list li {
     text-align: center;
-    margin: 10px 0; } }
+    margin: 10px 0; }
+  .start__bgi img {
+    max-width: 280%;
+    right: 113%;
+    top: -38px; }
+  .advantages_content_position_describe .__title {
+    display: block;
+    text-align: center; }
+  .advantages_content_position_describe {
+    align-items: center;
+    justify-content: space-around; }
+  .advantages_content_position_img img {
+    margin: 0 auto; }
+  .plans_positions_position .__img svg {
+    max-height: 140px; }
+  .scopes_positions {
+    display: block; }
+  .scopes_positions_position {
+    max-width: 350px;
+    min-width: 1px;
+    margin: 0 auto 30px; }
+  .reviews_content_position_img {
+    min-width: 180px; } }
+
+@media screen and (min-width: 767px) and (max-width: 769px) {
+  .start__bgi img {
+    right: 90%;
+    max-width: 200%;
+    top: 0; } }

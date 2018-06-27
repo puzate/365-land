@@ -106,9 +106,10 @@
 	.header_container
 		padding-right: 0
 		padding-left: 0
-		padding-top: 5px
+		padding-top: 25px
 		flex-wrap: wrap
 		position: relative
+		align-items: flex-start
 	.header_logo
 		max-width: 45%
 		img
@@ -140,13 +141,13 @@
 	.header_phones_list
 		padding-right: 20px
 	.header_phones_list li
-		margin: 8px 0
+		margin: 16px 0
 	.header_phones_list li a
-		font-size: 14px
+		font-size: 16px
 	.header_button-xs
 		display: block
 		flex: 0 0 100%
-		margin-top: -20px
+		margin-top: -60px
 		.__btn
 			outline: 0
 			border: none
@@ -272,9 +273,9 @@
 		flex: 0 0 80%
 		padding: 25px 15px 25px
 		min-width: 90%
-	.reviews_content_position
-		display: block
-		text-align: center
+	.reviews_content_position_img:after
+		bottom: auto
+		top: 70px
 	.reviews_content_position_img
 		margin-right: 0
 	.reviews_content_position_describe .__text
@@ -287,7 +288,7 @@
 		letter-spacing: 2.5px
 		font-size: 30px
 	.try-free_container
-		background-position: top
+		background-position: -91px 49px
 	.try-free_content .__btn
 		font-size: 16px
 		padding-right: 20px
@@ -309,3 +310,31 @@
 	.footer_phones_list li
 		text-align: center
 		margin: 10px 0
+	.start__bgi img
+		max-width: 280%
+		right: 113%
+		top: -38px
+	.advantages_content_position_describe .__title
+		display: block
+		text-align: center
+	.advantages_content_position_describe
+		align-items: center
+		justify-content: space-around
+	.advantages_content_position_img
+		img
+			margin: 0 auto
+	.plans_positions_position .__img svg
+		max-height: 140px
+	.scopes_positions
+		display: block
+	.scopes_positions_position
+		max-width: 350px
+		min-width: 1px
+		margin: 0 auto 30px
+	.reviews_content_position_img
+		min-width: 180px
+@media screen and (min-width: 767px) and (max-width: 769px)
+	.start__bgi img
+		right: 90%
+		max-width: 200%
+		top: 0

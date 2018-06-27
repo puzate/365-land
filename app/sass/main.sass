@@ -89,11 +89,26 @@ header
 	margin: 0 auto 100px
 	position: relative
 	z-index: 2
-	background-image: url(../img/shutterstock_695487799.jpg)
+	// background-image: url(../img/shutterstock_695487799.jpg)
 	background-repeat: no-repeat
-	background-size: cover
+	background-size: contain
+	background-position: center center
 	overflow: hidden
 	border-radius: 0 0 80px 80px
+.start__bgi
+	position: absolute
+	top: 0
+	bottom: 0
+	left: 0
+	right: 0
+	width: 100%
+	height: 100%
+	img
+		max-width: 100%
+		position: relative
+		top: -200px
+		display: block
+		height: auto
 .start_grad
 	position: absolute
 	top: 0
@@ -120,7 +135,7 @@ header
 	.__title
 		margin: 0
 		font-family: $i-bold
-		font-size: 58px
+		font-size: 44px
 		color: $white
 		letter-spacing: 3.5px
 	.__describe
@@ -211,7 +226,7 @@ header
 		text-transform: uppercase
 		font-size: 36px
 		font-family: $i-black
-		max-width: 310px
+		max-width: 330px
 		margin: 0
 		letter-spacing: 5px
 		width: 100%
@@ -332,7 +347,6 @@ header
 	display: -o-flex
 	display: flex
 	align-items: flex-start
-	max-width: 1000px
 	margin: 0 auto
 	padding-bottom: 50px
 .rates_positions_position
@@ -343,12 +357,18 @@ header
 	margin-right: 5px
 	margin-left: 5px
 	position: relative
-	max-width: 320px
+	flex: 0 0 33%
 	transition: 0.5s ease all
 	&:first-child
 		background-color: #bcbcbc
 	&:nth-child(2)
-		background-color: #828080
+		background-color: $orange
+		transform: scale(1.1)
+		z-index: 5
+		&:after
+			border-color: $orange transparent transparent transparent
+			bottom: -23px
+			border-width: 25px 195px 0 195px
 	&:last-child
 		background-color: #6e6e6e
 	&:after
